@@ -5,10 +5,51 @@
   padding: 10px;
 }
 
+.survey-heading,
+.newsletter-heading {
+    font-size: 2rem;
+    color: #8fcccb;
+}
+
 form {
   margin: 0 auto;
   text-align: left;
   display: inline-block;
+}
+
+fieldset {
+  font-size: initial;
+  color: #00cdcb;
+}
+
+input[id="name"]:focus,
+input[id="name"]:hover,
+input[id="email"]:focus,
+input[id="email"]:hover,
+input[id="retype"]:focus,
+input[id="retype"]:hover,
+button[id="submit"]:focus,
+button[id="submit"]:hover,
+input[id="john"]:focus,
+input[id="john"]:hover,
+input[id="hazzard"]:focus,
+input[id="hazzard"]:hover,
+input[id="bob"]:focus,
+input[id="bob"]:hover,
+input[id="sally"]:focus,
+input[id="sally"]:hover,
+select:focus,
+select:hover {
+  border-color: #8fcccb;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+p#hint-btn,
+p#hint-song {
+  font-size: 12px;
 }
 
 .container{
@@ -26,3 +67,4 @@ form {
     width: 40%;
   }
 }
+

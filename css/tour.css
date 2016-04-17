@@ -1,16 +1,32 @@
 /* Tour page styles */
 
-pre {
+table {
   font-family: 'Open Sans', sans-serif;
+  width: 100%;
 }
 
-.heading{
+th[scope="col"] {
+	color: white;
+}
+
+th {
+	margin-right: 20px;
+}
+.card {
+	padding: 20px 0 0 0;
+}
+
+.caption-heading {
   display: inline-block;
   margin: 0;
+  font-size: 2em;
+  color: #8fcccb;
 }
 
-.pick{
+.pick {
   width: 40px;
   height: 0%;
   padding: 10px;
 }
+
+

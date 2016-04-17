@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
       <meta charset="utf-8">
       <link href="css/styles.css" rel="stylesheet" type="text/css" />
@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <div class="main-nav">
+    <div class="main-nav" role="navigation">
       <ul class="nav">
         <li class="name"><a href="#">Accessible Frog</a></li>
         <li><a href="tour.html">Tour</a></li>
@@ -17,15 +17,17 @@
       </ul>
     </div>
 
-    <header>
+    <header role="banner">
+      <h1 class="header-heading">ACCESSIBLE FROG</h1>
+      <p class="header-p">we make awesome music</p>
     </header>
 
-    <main>
+    <main role="main">
       <div class="card">
         <div class="flex">
-          <img class="photo" src= "img/soul_of_the_frog.jpg">
+          <img class="photo" src= "img/soul_of_the_frog.jpg" alt="Album cover image of 'Sould Of the Frog'.">
           <div class="information">
-            <p class="heading">New album out now</p>
+            <h3 class="heading">New album out now</h3>
             <p>Soul of the Frog</p>
             <p>Digital/CD/ 2 x LP</p>
             <a href="#" class="buy">Purchase Album</a>
@@ -35,20 +37,20 @@
 
       <div class="card">
         <div class="flex">
-          <img class="photo" src= "img/lead_singer.jpg">
+          <img class="photo" src= "img/lead_singer.jpg" alt="Photo on the singer of the band.">
           <div class="information">
-            <p class="heading">About the band</p>
+            <h3 class="heading">About the band</h3>
             <p>Photo booth aliquip pinterest meggings. Sapiente commodo wolf put a bird on it fingerstache gentrify, meh polaroid vegan everyday carry.</p>
           </div>
         </div>
       </div>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
       <ul>
-        <li><a href="#" class="social twitter"></a></li>
-        <li><a href="#" class="social youtube"></a></li>
-        <li><a href="#" class="social spotify"></a></li>
+        <li><a href="#" class="social twitter" aria-hidden="true" title="Twitter link"></a></li>
+        <li><a href="#" class="social youtube" aria-hidden="true" title="Youtube link"></a></li>
+        <li><a href="#" class="social spotify" aria-hidden="true" title="Spotify link"></a></li>
       </ul>
       <p class="copyright">Copyright 2015, Accessible Frog</p>
     </footer>

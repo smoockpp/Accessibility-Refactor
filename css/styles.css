@@ -8,7 +8,7 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  color: #3A6355;
+  color: #00cdcb;
   background: #2d2b30;
 }
 
@@ -17,6 +17,7 @@ body {
 a {
   text-decoration: none;
   color: #999;
+  transition: all .5s;
 }
 
 a:hover {
@@ -27,7 +28,7 @@ a:hover {
 
 .main-nav {
   width: 100%;
-  background: rgba(45, 43, 48, 0.8);
+  background: rgba(45, 43, 48, 1);
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -54,52 +55,56 @@ a:hover {
   padding: 5px 10px 10px 10px;
 }
 
-.nav a {
-  transition: all .5s;
-}
-
-.nav a:hover {
+a:hover {
   color: white
 }
 
 header {
   text-align: center;
-  background: url('../img/concert02_with_text.jpg') no-repeat top center ;
+  background: url('../img/concert02_no_text.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
   height: 350px;
 }
 
-.tag {
-  color: black;
-  padding: 10px;
-  letter-spacing: 5px;
-}
+
 
 .name{
   font-weight: 300;
 }
 
-header .name{
+.header-heading {
+  color: white;
   font-size: 3em;
+  margin-top: 20px;
+  text-shadow: 0 0 1px black;
+  margin-bottom: 0;
 }
-.tagline {
-  font-weight: 600;
-  padding: 20px;
-  text-transform: uppercase;
-  color: #781125
+
+.header-p {
+  color: #00cdcb;
+  font-size: 2em;
+  margin-top: 0;
+}
+
+
+
+
+
+a.buy:hover {
+  color: white;
 }
 
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
   text-align: left;
-  border-top: 4px solid #781125;
+  border-top: 4px solid #8fcccb;
   clear: both;
 }
 .card:hover {
-  border-color: #96731A;
+  border-color: white;
 }
 
 
@@ -117,10 +122,10 @@ header .name{
   position: absolute;*/
 }
 
-.heading{
+.heading {
   font-size: 2em;
   text-transform: uppercase;
-  color: #781125;
+  color: #8fcccb;
   margin-top: 10px;
 }
 
@@ -157,24 +162,25 @@ a.social {
   transition: all .5s;
 }
 
-a.twitter {
-  background-image: url(../img/twitter-32.png);
+a.twitter:before {
+  display: inline-block;
+  content: url(../img/twitter-32.png);
 }
 
-a.youtube {
-  background-image: url(../img/youtube-32.png);
+a.youtube:before {
+  display: inline-block;
+  content: url(../img/youtube-32.png);
 }
 
-a.spotify {
-  background-image: url(../img/spotify-32.png);
+a.spotify:before {
+  display: inline-block;
+  content: url(../img/spotify-32.png);
 }
 
 a.social:hover {
   opacity: 1;
 }
-.clearfix {
-  clear: both;
-}
+
 
 /* Styles for larger screens */
 @media screen and (min-width: 840px) {
@@ -188,6 +194,15 @@ a.social:hover {
 
   header {
     min-height: 470px;
+  }
+
+  .header-heading {
+    margin: 0.67em;
+    font-size: 4em;
+  }
+
+  .header-p {
+    margin: 1em;
   }
 
   .nav {
@@ -204,19 +219,19 @@ a.social:hover {
     line-height: 1.6em;
   }
 
-  .card{
+  .card {
     margin: 40px auto;
     padding: 20px 40px 40px;
     width: 80%;
     max-width: 1000px;
   }
 
-  .photo{
+  .photo {
     width: 30%;
     margin: 20px 30px;
   }
 
-  .information{
+  .information {
     text-align: left;
   }
 
