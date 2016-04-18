@@ -152,34 +152,45 @@ footer ul li {
   display: inline-block;
 }
 
+.social-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 a.social {
   display: inline-block;
-  margin-left: 5px;
-  width: 30px;
-  height: 30px;
+  margin-right: 10px;
+
   background-size: 30px 30px;
-  opacity: .4;
+  color: #999;
   transition: all .5s;
+  font-size: 1rem;
 }
 
 a.twitter:before {
   display: inline-block;
   content: url(../img/twitter-32.png);
+  
 }
 
 a.youtube:before {
   display: inline-block;
   content: url(../img/youtube-32.png);
+
 }
 
 a.spotify:before {
   display: inline-block;
   content: url(../img/spotify-32.png);
+
 }
 
 a.social:hover {
-  opacity: 1;
+  color: white;
 }
+
 
 
 /* Styles for larger screens */

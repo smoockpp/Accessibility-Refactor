@@ -39,8 +39,16 @@ input[id="bob"]:hover,
 input[id="sally"]:focus,
 input[id="sally"]:hover,
 select:focus,
-select:hover {
-  border-color: #8fcccb;
+select:hover,
+textarea:focus,
+textarea:hover {
+  background: #8fcccb;
+  color: white;
+}
+
+input[type="radio"]:hover,
+input[type="radio"]:focus {
+  transform: scale(1.5);
 }
 
 input[type="radio"] {
