@@ -162,7 +162,7 @@ footer ul li {
 a.social {
   display: inline-block;
   margin-right: 10px;
-
+  opacity: 0.7;
   background-size: 30px 30px;
   color: #999;
   transition: all .5s;
@@ -188,7 +188,13 @@ a.spotify:before {
 }
 
 a.social:hover {
-  color: white;
+  opacity: 1;
+}
+
+.hidden {
+  position: absolute !important;
+   top: -9999px !important;
+   left: -9999px !important;
 }
 
 

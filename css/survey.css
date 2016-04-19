@@ -53,6 +53,14 @@ input[type="radio"]:focus {
 
 input[type="radio"] {
   margin-right: 5px;
+  float: left;
+}
+
+label[for="john"],
+label[for="hazzard"],
+label[for="bob"],
+label[for="sally"] {
+  float: left;
 }
 
 p#hint-btn,
